@@ -7,7 +7,7 @@ window.onload = () => {
 	question.addEventListener("keyup", (event) => {
 		if (event.keyCode === 13) {
 			event.preventDefault();
-			if(question.value == "0" || !question.value.match(regexQuestion)){
+			if(question.value == "0" || isNaN(parseInt(question.value)) || !question.value.match(regexQuestion)){
 				question.value = "";
 				question.setAttribute("placeholder", "number maybe?");
 				setTimeout(resetPlaceholder, 2000);
