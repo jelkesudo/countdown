@@ -1,7 +1,6 @@
 window.onload = () => {
 	let root = document.documentElement;
 	let question = document.getElementById("askIt");
-	let buttonConfirm = document.getElementById("confirm");
 	let regexQuestion = /\d/;
 	let answer, member = 0;
 	let colorsArray = ["#79fc68", "#68c6fc", "#fc6892", "#fcf568", "#fca368"];
