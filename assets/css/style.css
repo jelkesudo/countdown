@@ -32,6 +32,7 @@ h1{
 }
 #ask input::placeholder{
 	font-size: 2em;
+	color: #121212;
 }
 #ask input:focus{
 	outline: none;
