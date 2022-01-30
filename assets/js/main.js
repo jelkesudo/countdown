@@ -1,7 +1,7 @@
 window.onload = () => {
 	let root = document.documentElement;
 	let question = document.getElementById("askIt");
-	let regexQuestion = /\d/;
+	let regexQuestion = /[0-9][^NaN]/;
 	let answer, member = 0;
 	let colorsArray = ["#79fc68", "#68c6fc", "#fc6892", "#fcf568", "#fca368"];
 	question.addEventListener("keyup", (event) => {
