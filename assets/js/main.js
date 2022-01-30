@@ -1,7 +1,7 @@
 window.onload = () => {
 	let root = document.documentElement;
 	let question = document.getElementById("askIt");
-	let regexQuestion = /[0-9][^NaN]/;
+	let regexQuestion = /\d/;
 	let answer, member = 0;
 	let colorsArray = ["#79fc68", "#68c6fc", "#fc6892", "#fcf568", "#fca368"];
 	question.addEventListener("keyup", (event) => {
@@ -15,6 +15,7 @@ window.onload = () => {
 			else{
 				answer = parseInt(question.value);
 				question.style.display = "none";
+				question.setAttribute("disabled", "disabled");
 				document.getElementById("ask").innerHTML = `<h1>${answer--}</h1>`;
 				let countdown = setInterval(() => {
 					if(answer == -1){
